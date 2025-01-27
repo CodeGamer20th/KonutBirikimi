@@ -4,8 +4,8 @@ import pandas as pd
 st.title(":blue[Konut Birikimi]")
 st.markdown("***Burada çeşitli parametrelerle daire(ler) alabilme ihtimallerinizi değerlendirebileceksiniz...***")
 st.text("")
-with st.sidebar:
-    st.write("")
+#with st.sidebar:
+    #st.write("")
 with st.container():
     with st.container(border=True):
         yas1=st.slider("**Yaş aralığını seçiniz..**", 0,130,(25,65))
