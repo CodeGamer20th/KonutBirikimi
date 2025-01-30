@@ -261,5 +261,7 @@ if btn:
     st.caption(f"Aktif kredi sayısı: ***{str(gidersayisi)}***")
     st.caption(f"Daire sayısı: ***{str(evsayisi)}***")
     st.dataframe(df)"""
-st.code(code, language="python")
+
+with st.expander("Codes:"):
+    st.code(code, language="python")
 
