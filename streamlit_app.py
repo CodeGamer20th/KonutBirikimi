@@ -122,7 +122,7 @@ data={
     }
 df=pd.DataFrame(data)
 df=df.sort_values("Zaman")
-btn=st.button("sonuç")
+btn=st.button("Sonuç için tıklayınız")
 if btn:
     st.caption(f"Sermaye: ***{format(round(toplananpara))}₺***")
     st.caption(f"Aylık gelir: ***{str(round(aylik))}₺***(Kira getirisi: {str(round(aylik-aylik0))}₺) - Aylık gider: ***{str(round(gidertop))}₺*** = Net gelir: ***{str(round(aylik-gidertop))}₺***")
