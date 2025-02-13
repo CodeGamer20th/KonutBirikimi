@@ -82,12 +82,15 @@ for i in range(suankiay,toplamay+1):
     for t3 in listeborcay:
         clist.append(t3-1)
     listeborcay=clist
-    if toplananpara>=pesinat:
-        toplananpara-=pesinat
-        evsayisi+=1
-        listeborcay.append(krediay)
-        aylik=aylik+kira
-        krediborcu+=(evfiyat-pesinat)
+    while True:
+        if toplananpara>=pesinat:
+            toplananpara-=pesinat
+            evsayisi+=1
+            listeborcay.append(krediay)
+            aylik=aylik+kira
+            krediborcu+=(evfiyat-pesinat)
+        else:
+            break
     aktifkredisayisi=0 #aylık net aktif kredi sayımız için ekledik, gider sayısından farklı orada ödeme yapılıyor, burada borç olarak ekleniyor.
     for t2 in listeborcay:
         if t2 > 0:
